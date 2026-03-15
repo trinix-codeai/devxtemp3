@@ -36,7 +36,7 @@ export function BookingsPage() {
 
             <DataTable
                 columns={columns}
-                data={mockBookings as unknown as Record<string, unknown>[]}
+                data={mockBookings}
                 searchPlaceholder="Search bookings..."
             />
         </div>

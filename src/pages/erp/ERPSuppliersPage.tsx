@@ -34,7 +34,7 @@ export function ERPSuppliersPage() {
                 </div>
                 <button className="btn-primary"><Plus size={16} /> Add Vendor</button>
             </div>
-            <DataTable columns={columns} data={mockSuppliers as unknown as Record<string, unknown>[]} searchPlaceholder="Search vendors..." />
+            <DataTable columns={columns} data={mockSuppliers} searchPlaceholder="Search vendors..." />
         </div>
     );
 }

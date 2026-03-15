@@ -33,7 +33,7 @@ export function ERPProductsPage() {
                     <button className="btn-primary"><Plus size={16} /> Add Product</button>
                 </div>
             </div>
-            <DataTable columns={columns} data={mockProducts as unknown as Record<string, unknown>[]} searchPlaceholder="Search products..." />
+            <DataTable columns={columns} data={mockProducts} searchPlaceholder="Search products..." />
         </div>
     );
 }

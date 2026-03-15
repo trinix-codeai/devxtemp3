@@ -27,7 +27,7 @@ export function ERPBookingsPage() {
                 </div>
                 <button className="btn-primary"><Plus size={16} /> New Booking</button>
             </div>
-            <DataTable columns={columns} data={mockBookings as unknown as Record<string, unknown>[]} searchPlaceholder="Search bookings..." />
+            <DataTable columns={columns} data={mockBookings} searchPlaceholder="Search bookings..." />
         </div>
     );
 }

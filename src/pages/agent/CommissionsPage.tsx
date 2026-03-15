@@ -47,7 +47,7 @@ export function CommissionsPage() {
                 <BarChartWidget data={monthlyCommissions} />
             </ChartCard>
 
-            <DataTable columns={columns} data={mockCommissions as unknown as Record<string, unknown>[]} searchPlaceholder="Search commissions..." />
+            <DataTable columns={columns} data={mockCommissions} searchPlaceholder="Search commissions..." />
         </div>
     );
 }

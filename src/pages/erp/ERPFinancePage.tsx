@@ -48,7 +48,7 @@ export function ERPFinancePage() {
             </div>
 
             <ChartCard title="Cash Flow" subtitle="Revenue vs expenses"><AreaChartWidget data={cashFlowData} /></ChartCard>
-            <DataTable columns={columns} data={mockInvoices as unknown as Record<string, unknown>[]} searchPlaceholder="Search invoices..." />
+            <DataTable columns={columns} data={mockInvoices} searchPlaceholder="Search invoices..." />
         </div>
     );
 }

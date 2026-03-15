@@ -58,7 +58,7 @@ export function ContactsPage() {
                 ))}
             </div>
 
-            <DataTable columns={columns} data={mockContacts as unknown as Record<string, unknown>[]} searchPlaceholder="Search contacts..." />
+            <DataTable columns={columns} data={mockContacts} searchPlaceholder="Search contacts..." />
         </div>
     );
 }

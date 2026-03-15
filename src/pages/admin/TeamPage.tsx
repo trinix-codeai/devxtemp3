@@ -1,6 +1,6 @@
 import { ChartCard, BarChartWidget } from "../../components/ui/ChartWidgets";
 import { teamPerformance } from "../../data/mockData";
-import { Users, Award, Clock, TrendingUp, Star } from "lucide-react";
+import { Award, Clock, TrendingUp, Star } from "lucide-react";
 
 const agents = [
     { name: "Sarah Mitchell", initials: "SM", deals: 42, revenue: 145200, conversion: 32, avgResponse: "2.1h", satisfaction: 4.8, status: "online" },

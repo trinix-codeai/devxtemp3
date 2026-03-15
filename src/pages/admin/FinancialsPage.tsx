@@ -5,12 +5,21 @@ import { ChartCard, AreaChartWidget } from "../../components/ui/ChartWidgets";
 import { DollarSign, CreditCard, AlertTriangle, CheckCircle, Download } from "lucide-react";
 import type { Invoice } from "../../types";
 
-const statusColors: Record<string, string> = { draft: "badge-neutral", sent: "badge-info", paid: "badge-success", overdue: "badge-danger", cancelled: "badge-neutral" };
+const statusColors: Record<string, string> = {
+    draft: "badge-neutral",
+    sent: "badge-info",
+    paid: "badge-success",
+    overdue: "badge-danger",
+    cancelled: "badge-neutral"
+};
 
 const revenueData = [
-    { name: "Sep", value: 42000, value2: 38000 }, { name: "Oct", value: 58000, value2: 52000 },
-    { name: "Nov", value: 65000, value2: 45000 }, { name: "Dec", value: 48000, value2: 55000 },
-    { name: "Jan", value: 72000, value2: 62000 }, { name: "Feb", value: 85000, value2: 68000 },
+    { name: "Sep", value: 42000, value2: 38000 },
+    { name: "Oct", value: 58000, value2: 52000 },
+    { name: "Nov", value: 65000, value2: 45000 },
+    { name: "Dec", value: 48000, value2: 55000 },
+    { name: "Jan", value: 72000, value2: 62000 },
+    { name: "Feb", value: 85000, value2: 68000 },
 ];
 
 const columns = [
@@ -45,9 +54,15 @@ export function FinancialsPage() {
                 <StatCard label="Net Margin" value="24.5%" icon={<DollarSign size={20} className="text-coral-500" />} iconBg="bg-coral-100" trend={{ value: 2, label: "vs last quarter" }} />
             </div>
 
-            <ChartCard title="Revenue vs Expenses" subtitle="6-month trend"><AreaChartWidget data={revenueData} /></ChartCard>
+            <ChartCard title="Revenue vs Expenses" subtitle="6-month trend">
+                <AreaChartWidget data={revenueData} />
+            </ChartCard>
 
-           
+            <DataTable
+                columns={columns}
+                data={mockInvoices}
+                searchPlaceholder="Search invoices..."
+            />
         </div>
     );
 }

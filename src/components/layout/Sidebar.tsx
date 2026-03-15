@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import {
     LayoutDashboard, Users, GitPullRequestDraft, Calendar, BookOpen,
-    DollarSign, Package, Warehouse, Truck, FileText, BarChart3,
+    DollarSign, Package, Truck, BarChart3,
     Settings, Plug, UserCog, Globe, Map, ShoppingBag, Building2,
     TrendingUp, Mail, ClipboardList, ChevronLeft, Compass, Sparkles,
     CreditCard, PieChart, Boxes, Receipt, FolderOpen, Target

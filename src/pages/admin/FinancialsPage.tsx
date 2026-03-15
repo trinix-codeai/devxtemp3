@@ -47,7 +47,7 @@ export function FinancialsPage() {
 
             <ChartCard title="Revenue vs Expenses" subtitle="6-month trend"><AreaChartWidget data={revenueData} /></ChartCard>
 
-            <DataTable columns={columns} data={mockInvoices as unknown as Record<string, unknown>[]} searchPlaceholder="Search invoices..." />
+           
         </div>
     );
 }

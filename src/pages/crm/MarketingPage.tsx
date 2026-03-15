@@ -1,6 +1,6 @@
 import { mockCampaigns } from "../../data/mockData";
 import { StatCard } from "../../components/ui/StatCard";
-import { Mail, Users, MousePointer, TrendingUp, Plus, MoreHorizontal, Eye } from "lucide-react";
+import { Mail, Users, MousePointer, TrendingUp, Plus, MoreHorizontal, } from "lucide-react";
 import type { Campaign } from "../../types";
 
 const statusColors: Record<string, string> = { draft: "badge-neutral", scheduled: "badge-info", active: "badge-success", completed: "badge-coral", paused: "badge-warning" };

@@ -47,7 +47,7 @@ export function ClientsPage() {
 
             <DataTable
                 columns={columns}
-                data={mockContacts as unknown as Record<string, unknown>[]}
+                data={mockContacts}
                 searchPlaceholder="Search clients..."
             />
         </div>

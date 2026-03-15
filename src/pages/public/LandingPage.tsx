@@ -7,8 +7,6 @@ import {
   Users, 
   Briefcase, 
   Zap, 
-  ArrowRight, 
-  Star, 
   CheckCircle2, 
   Mail, 
   Lock, 
